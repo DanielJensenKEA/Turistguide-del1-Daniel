@@ -9,7 +9,6 @@ import java.util.List;
 @Repository
 public class TourismRepository {
     private List<TouristAttraction> attractions;
-    private int count = 1;
 
     public TourismRepository() {
         attractions = new ArrayList<>();
@@ -17,13 +16,10 @@ public class TourismRepository {
     }
 
 
-    public int getId() {
-        return count++;
-    }
     public void populateAttractions() {
-        attractions.add(new TouristAttraction(getId(), "Tivoli"));
-        attractions.add(new TouristAttraction(getId(), "Bakken"));
-        attractions.add(new TouristAttraction(getId(), "Børsen"));
+        attractions.add(new TouristAttraction("Tivoli", "Beskrivelse af Tivoli"));
+        attractions.add(new TouristAttraction("Bakken", "Beskrivelse af Bakken"));
+        attractions.add(new TouristAttraction("Børsen", "Beskrivelse af Børsen"));
     }
 
     /*///////////////////CRUD///////////////////////*/
@@ -31,13 +27,13 @@ public class TourismRepository {
         attractions.remove(ta);
     }
     public TouristAttraction addAttraction(TouristAttraction ta) {
-        ta.setId(getId());
         attractions.add(ta);
         return ta;
     }
     public List<TouristAttraction> getListOfAttractions() {
         return attractions;
     }
+
 
 
     public TouristAttraction getSpecificTouristAttraction(String name) {

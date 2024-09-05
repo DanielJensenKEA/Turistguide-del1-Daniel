@@ -29,7 +29,7 @@ public class TouristService {
     }
 
 
-    public TouristAttraction updateTouristAttractionName() {
-        //TODO: ?requestParam value = newName? Eller bare give den et nyt navn med. Samme test af POST request som getSpecificTouristAttraction()
-    }
+//    public TouristAttraction updateTouristAttractionName() {
+//        //TODO: ?requestParam value = newName? Eller bare give den et nyt navn med. Samme test af POST request som getSpecificTouristAttraction()
+//    }
 }
