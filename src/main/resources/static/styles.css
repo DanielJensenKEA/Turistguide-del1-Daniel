@@ -61,3 +61,28 @@ h2 {
     font-family: "Century Gothic", serif;
     color: rgba(60,53,61,0.91);
 }
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+@media (min-width: 40em) {
+    .main-content {
+        flex-direction: row;
+        align-items:flex-start;
+    }
+}
+
+.attraction-image {
+    width: 100%;
+    max-width: 15em;
+    height: auto;
+    border-radius: 2px;
+}
+.text-section {
+    max-width: 80%
+}
+.tivoli-nav {
+    background: none;
+}
