@@ -41,7 +41,8 @@ footer {
 }
 /* Styling */
 body {
-    background: #223985;
+    /* background: #223985; */
+    background: #ffc107;
 
 }
 header,
@@ -76,13 +77,18 @@ h2 {
 
 .attraction-image {
     width: 100%;
-    max-width: 15em;
+    max-width: 500px;
     height: auto;
     border-radius: 2px;
 }
+
 .text-section {
     max-width: 80%
 }
 .tivoli-nav {
     background: none;
+}
+main img {
+    max-width: 100%;
+    height: auto;
 }
