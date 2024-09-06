@@ -42,14 +42,14 @@ footer {
 /* Styling */
 body {
     /* background: #223985; */
-    background: #ffc387;
+    background: rgba(179, 28, 28, 0.72);
 
 }
 header,
 nav,
 main,
 footer {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.65);
     padding: 1em;
 }
 h1 {
@@ -75,20 +75,10 @@ h2 {
     }
 }
 
-.attraction-image {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 2px;
-}
-
-.text-section {
-    max-width: 80%
-}
-.tivoli-nav {
-    background: none;
-}
-main img {
+img {
     max-width: 100%;
     height: auto;
+}
+p, a {
+    font-family: Cambria;
 }
